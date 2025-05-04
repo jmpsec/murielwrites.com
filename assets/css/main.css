@@ -26,6 +26,7 @@
   --theme-five-more-pixs: #2f3963;
   --theme-five-more-pixs-light: #bcd8eb;
   --theme-call-me-gwapo-light: #a0c3a0;
+  --theme-call-me-gwapo-lighter:rgb(189, 212, 189);
   --theme-call-me-gwapo: #a0c3a0;
   --theme-call-me-gwapo-dark: #317d32;
   --theme-teal: #0b485a;
@@ -161,53 +162,6 @@ a:hover {
 }
 code {
   font-size: var(--font-size-code);
-}
-blockquote {
-  font-style: italic;
-  font-size: 18px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-  align-items: center;
-  background: #fff;
-  padding: 20px 40px 20px 40px;
-  margin: 0 auto 20px;
-  position: relative;
-  line-height: 1.2;
-  color: #666;
-}
-leftquote {
-  font-family: Georgia, serif;
-  margin-bottom: auto;
-  display: inline-block;
-  font-size: 60px;
-  font-weight: bold;
-  color: #999;
-}
-leftquote:before {
-  content: "\201C";
-}
-rightquote {
-  font-family: Georgia, serif;
-  margin-top: auto;
-  display: inline-block;
-  font-size: 60px;
-  font-weight: bold;
-  color: #999;
-}
-rightquote:before {
-  content: "\201D";
-}
-blockquote a {
-  text-decoration: none;
-  background: #eee;
-  cursor: pointer;
-  padding: 0 3px;
-  color: #c76c0c;
-}
-blockquote a:hover {
-  color: #666;
 }
 .card {
   padding: 20px;
@@ -747,15 +701,6 @@ html {
 #homepage-layout #about-muriel-wrap a {
   color: var(--theme-white);
 }
-
-.theme-light-greenish-gray {
-  background: var(--theme-light-greenish-gray);
-}
-.theme-light-greenish-gray .theme-light-greenish-gray-inner {
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 50px;
-  padding: 20px 40px;
-}
 .slider-with-text-wrap .slide-inner {
   grid-template-columns: calc(50% - 20px) calc(50% - 20px);
   padding: 40px;
@@ -865,36 +810,8 @@ html {
     padding: unset;
   }
 }
-.testimonials-wrap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 100%;
-  margin-bottom: 80px;
-}
-.testimonials-wrap blockquote {
-  min-width: 350px;
-  width: 100%;
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 720px) {
-  .testimonials-wrap blockquote {
-    max-width: calc(50% - 10px);
-  }
-}
-.testimonials-wrap quote {
-  display: block;
-}
-.testimonials-wrap h1 {
-  margin-bottom: 0;
-  width: 100%;
-}
 .bookcollectionprev {
   padding: 40px 0;
-}
-.testimonials-wrap.bookscollection {
-  margin-top: 20px;
 }
 *,
 *::before,
@@ -1134,10 +1051,16 @@ html {
   }
 }
 
-.reviews-heading {
+.reviews-heading-five {
   text-align: center;
   margin-bottom: 2rem;
   color: var(--theme-white);
+}
+
+.reviews-heading-gwapo {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--theme-black);
 }
 
 .reviews-container {
@@ -1149,10 +1072,19 @@ html {
   padding: 1rem 0;
 }
 
-.review-item {
+.review-item-five {
   display: flex;
   flex-direction: column;
   background-color: var(--theme-five-more-pixs-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-item-gwapo {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme-call-me-gwapo-lighter);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
