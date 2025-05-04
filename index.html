@@ -16,6 +16,7 @@
     <meta property="og:type" content="article" />
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto:300,400,400i,700,700i&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@5.2.4/keen-slider.min.css"/>
     <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
@@ -107,15 +108,14 @@
       <div class="page-main">
         <main role="main">
 	        <div id="homepage-layout">
+
             <div class='controlHandler' id='controlHandle1'>
-              <div class='controlHandlebar' id='controlHandlebar1'></div>
               <div class='control' id='control1'>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@5.2.4/keen-slider.min.css"/>
                 <div class="keen-slider-wrap slider-with-text-wrap">
                   <div class="navigation-wrapper">
-                    <div style="width:100%;" class="keen-slider" id="my-keen-slider">
-                      <div style="width:100%;" class="keen-slider__slide theme-navy" >
-                        <div class="slide-inner theme-navy">
+                    <div style="width:100%;" class="keen-slider" id="keen-slider-news">
+                      <div style="width:100%;" class="keen-slider__slide theme-call-me-gwapo-light" >
+                        <div class="slide-inner theme-call-me-gwapo-light">
                           <div class="text-wrap">
                             <div style="margin:auto;">
                               <h1 style="margin-top:0;">Announcing the French Version of Call Me Gwapo</h1>
@@ -125,8 +125,8 @@
                           <img style="max-width:100%;" alt="" src="assets/img/COVER-appelle_moi_gwapo title reveal.png">
                         </div>
                       </div>
-                      <div style="width:100%;" class="keen-slider__slide theme-navy" >
-                        <div class="slide-inner theme-navy">
+                      <div style="width:100%;" class="keen-slider__slide theme-call-me-gwapo-light" >
+                        <div class="slide-inner theme-call-me-gwapo-light">
                           <div class="text-wrap">
                             <div style="margin:auto;">
                               <h1 style="margin-top:0;">Sextortion Awareness Session</h1>
@@ -154,10 +154,10 @@
                   <div id="dots" class="dots"></div>
                 </div>
               </div>
-            </div>
+            </div> <!-- end container announcements -->
+
 		        <div id="five-more-pixs-wrap" class="container">
               <div class='controlHandler' id='controlHandle3'>
-                <div class='controlHandlebar' id='controlHandlebar3'></div>
                 <div class='control' id='control3'>
                   <div id="fivemorepixs" class="cmscontent">
                     <h1><b>Five More Pixs</b></h1>
@@ -165,7 +165,6 @@
                 </div>
               </div>
               <div class='controlHandler' id='controlHandle4'>
-                <div class='controlHandlebar' id='controlHandlebar4'></div>
                 <div class='control' id='control4'>
                   <div class="bookcollectionprev">
                     <div class="row">
@@ -191,29 +190,50 @@
                         <div id="book-cms-wrap">
                           <div class="theme-light-greenish-gray-inner">
                             <div class='controlHandler' id='controlHandle8'>
-                              <div class='controlHandlebar' id='controlHandlebar8'></div>
                               <div class='control' id='control8'>
                                 <div class="cmscontent">
-                                  <h1>Reviews</h1>
+                                  <h1 class="reviews-heading">Reviews</h1>
 
-                                  <div class="testimonials-wrap bookscollection">
-                                    <blockquote>
-                                      <leftquote></leftquote>
-                                      <center>
-                                        <quote>A superb dramatization of timely teen issues that will educate readers of all ages.</quote>
-                                      </center>
-                                      <rightquote></rightquote>
-                                    </blockquote>
-                                    <p>—Kirkus Review, <cite>Full review <a href="https://www.kirkusreviews.com/book-reviews/muriel-tronc/five-more-pixs/">here</a></cite>
-                                    <blockquote>
-                                      <leftquote></leftquote>
-                                      <center>
-                                        <quote><p>The social media interface was done incredibly well, and I absolutely appreciated how Tronc was able to weave messaging and the digital world into these girls&rsquo; real lives. Tronc took a considerable risk in writing this novel, and I must say that it paid off well. Overall, I&rsquo;m very much impressed by the concept, and I was thoroughly engaged from the beginning to the end.</quote>
-                                      </center>
-                                      <rightquote></rightquote>
-                                    </blockquote>
-                                    <p>—Judge, <cite>8th Annual Writer’s Digest Self-Published eBook Awards</cite>
+                                  <div class="reviews-container">
+                                    <div class="review-item">
+                                      <div class="review-quote">
+                                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                                        <p class="quote-text">A superb dramatization of timely teen issues that will educate readers of all ages.</p>
+                                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                                      </div>
+                                      <div class="review-source">
+                                        <p class="reviewer">Kirkus Review</p>
+                                        <a href="https://www.kirkusreviews.com/book-reviews/muriel-tronc/five-more-pixs/" class="review-link">Read full review</a>
+                                      </div>
+                                    </div>
+
+                                    <div class="review-divider"></div>
+
+                                    <div class="review-item">
+                                      <div class="review-quote">
+                                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                                        <p class="quote-text">The social media interface was done incredibly well, and I absolutely appreciated how Tronc was able to weave messaging and the digital world into these girls&rsquo; real lives. Tronc took a considerable risk in writing this novel, and I must say that it paid off well. Overall, I&rsquo;m very much impressed by the concept, and I was thoroughly engaged from the beginning to the end.</p>
+                                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                                      </div>
+                                      <div class="review-source">
+                                        <p class="reviewer">Judge, 8th Annual Writer's Digest Self-Published eBook Awards</p>
+                                      </div>
+                                    </div>
+
+                                    <div class="review-divider"></div>
+
+                                    <div class="review-item">
+                                      <div class="review-quote">
+                                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                                        <p class="quote-text">An important read for modern teenagers and their parents.</p>
+                                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                                      </div>
+                                      <div class="review-source">
+                                        <p class="reviewer">Alex Stamos, Former Facebook Chief Security Officer</p>
+                                      </div>
+                                    </div>
                                   </div>
+
                                 </div>
                               </div>
                             </div>
@@ -228,10 +248,9 @@
 
 
 		<div id="backgroundtop" class="backgroundtop"></div>
-		<div id="call-me-gwapo-wrap" class="theme-deep-purple">
+		<div id="call-me-gwapo-wrap" class="theme-call-me-gwapo">
 			<div class="container">
 				<div class='controlHandler' id='controlHandle5'>
-          <div class='controlHandlebar' id='controlHandlebar5'></div>
           <div class='control' id='control5'>
             <div id="callmegwapo" class="cmscontent">
               <h1><b>Call Me Gwapo</b></h1>
@@ -242,7 +261,6 @@
 			<div>
 			  <div class="container">
 					<div class='controlHandler' id='controlHandle6'>
-            <div class='controlHandlebar' id='controlHandlebar6'></div>
             <div class='control' id='control6'>
               <div class="bookcollectionprev">
                 <div class="row">
@@ -274,7 +292,6 @@
         <div class="row">
           <div class="col-md-4">
             <div class='controlHandler' id='controlHandle12'>
-              <div class='controlHandlebar' id='controlHandlebar12'></div>
               <div class='control' id='control12'>
                 <img id="logo" src="assets/img/muriel.png" alt="Muriel Tronc">
               </div>
@@ -282,7 +299,6 @@
           </div>
 			    <div class="col-md-8">
 				    <div class='controlHandler' id='controlHandle7'>
-              <div class='controlHandlebar' id='controlHandlebar7'></div>
               <div class='control' id='control7'>
                 <div id="consulting" class="cmscontent">
                   <h1><b>Consulting</b></h1>
@@ -339,17 +355,17 @@
         </div>
 
         <div class="bottom">
-
           <div class="bottom-inner">
             <p>
-              <span style="font-weight:700;">2025 - Muriel Tronc</span><br/>
+              <span>2025 - Muriel Tronc</span><br/>
             </p>
         </div>
+
       </div>
 
     </div>
 
-</footer></div>
+  </footer>
 </div>
 <script>
   function toggleMenu(){
@@ -362,20 +378,19 @@
             mobileNav.classList.add("active");
         }
     }
-var fontDisplaySize = "regular";
-function resetMobileNav(){
-    var mobilenav = document.querySelector(".mobilenav");
-    let activeItems = mobilenav.querySelectorAll(".active");
-    let hiddenItems = mobilenav.querySelectorAll(".hidden");
-    for (let i = 0; i < activeItems.length; i++) {
-        activeItems[i].classList.remove("active");
-    }
-    for (let i = 0; i < hiddenItems.length; i++) {
-        hiddenItems[i].classList.remove("hidden");
-    }
-    mobilenav.classList.remove("item-selected");
-
-}
+  var fontDisplaySize = "regular";
+  function resetMobileNav(){
+      var mobilenav = document.querySelector(".mobilenav");
+      let activeItems = mobilenav.querySelectorAll(".active");
+      let hiddenItems = mobilenav.querySelectorAll(".hidden");
+      for (let i = 0; i < activeItems.length; i++) {
+          activeItems[i].classList.remove("active");
+      }
+      for (let i = 0; i < hiddenItems.length; i++) {
+          hiddenItems[i].classList.remove("hidden");
+      }
+      mobilenav.classList.remove("item-selected");
+  }
 </script>
 <script>
   // Get the main dropdown container
@@ -410,7 +425,7 @@ function resetMobileNav(){
   const dropdownMenus = document.querySelectorAll('.dropdown-menu');
 
   // Attach mouseover event listeners to each dropdown item
-// Get the viewport dimensions
+  // Get the viewport dimensions
   navItems.forEach(item => {
     item.addEventListener('mouseover', () => {
       let viewportWidth = window.innerWidth;
@@ -457,26 +472,21 @@ function resetMobileNav(){
 
   document.getElementById('arrow-left').addEventListener('click', () => slider.prev());
   document.getElementById('arrow-right').addEventListener('click', () => slider.next());
-  var slider = new KeenSlider("#my-keen-slider", {
-  rubberband: true,
-        loop: true,
-        spacing: 0,
-        duration: 3000,
-        slidesPerView: 1,
-        dragStart: () => setPause(true),
-        dragEnd: () => setPause(false),
-  created: function (instance) {
-    document
-      .getElementById("arrow-left")
-      .addEventListener("click", function () {
-        instance.prev()
-      })
-
-    document
-      .getElementById("arrow-right")
-      .addEventListener("click", function () {
-        instance.next()
-      })
+  var slider = new KeenSlider("#keen-slider-news", {
+    rubberband: true,
+    loop: true,
+    spacing: 0,
+    duration: 3000,
+    slidesPerView: 1,
+    dragStart: () => setPause(true),
+    dragEnd: () => setPause(false),
+    created: function (instance) {
+      document.getElementById("arrow-left").addEventListener("click", function () {
+      instance.prev()
+  });
+  document.getElementById("arrow-right").addEventListener("click", function () {
+    instance.next()
+  });
     var dots_wrapper = document.getElementById("dots")
     var slides = document.querySelectorAll(".keen-slider__slide")
     slides.forEach(function (t, idx) {
@@ -489,44 +499,44 @@ function resetMobileNav(){
       })
     })
     updateClasses(instance)
-  },
-  slideChanged(instance) {
+    },
+    slideChanged(instance) {
     updateClasses(instance)
-  },
-})
-
-function updateClasses(instance) {
-  var slide = instance.details().relativeSlide
-  var arrowLeft = document.getElementById("arrow-left")
-  var arrowRight = document.getElementById("arrow-right")
-  slide === 0
-    ? arrowLeft.classList.add("arrow--disabled")
-    : arrowLeft.classList.remove("arrow--disabled")
-  slide === instance.details().size - 1
-    ? arrowRight.classList.add("arrow--disabled")
-    : arrowRight.classList.remove("arrow--disabled")
-
-  var dots = document.querySelectorAll(".dot")
-  dots.forEach(function (dot, idx) {
-    idx === slide
-      ? dot.classList.add("dot--active")
-      : dot.classList.remove("dot--active")
+    },
   })
-}
-setPause(true);
- function setPause(value) {
-      pause = value;
-      window.clearInterval(timer);
-      timer = undefined;
 
-      if (pause) return;
+  function updateClasses(instance) {
+    var slide = instance.details().relativeSlide
+    var arrowLeft = document.getElementById("arrow-left")
+    var arrowRight = document.getElementById("arrow-right")
+    slide === 0
+      ? arrowLeft.classList.add("arrow--disabled")
+      : arrowLeft.classList.remove("arrow--disabled")
+    slide === instance.details().size - 1
+      ? arrowRight.classList.add("arrow--disabled")
+      : arrowRight.classList.remove("arrow--disabled")
 
-      timer = setInterval(() => {
-        if (!pause && slider) {
-          slider.next();
-        }
+    var dots = document.querySelectorAll(".dot")
+    dots.forEach(function (dot, idx) {
+      idx === slide
+        ? dot.classList.add("dot--active")
+        : dot.classList.remove("dot--active")
+    })
+  }
+  setPause(true);
+  function setPause(value) {
+    pause = value;
+    window.clearInterval(timer);
+    timer = undefined;
+
+    if (pause) return;
+
+    timer = setInterval(() => {
+      if (!pause && slider) {
+        slider.next();
+      }
       }, 15000);
-    }
+  }
 </script>
 
 </body>
